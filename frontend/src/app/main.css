@@ -50,23 +50,20 @@
   }
 }
 
+* {
+  overscroll-behavior-x: none;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior: none;
+  width: 100%;
 }
 
 section {
   scroll-margin-top: 80px;
-}
-
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
-}
-
-* {
-  max-width: 100%;
 }
 
 *,
@@ -77,6 +74,8 @@ body {
 
 body {
   overflow-x: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior: none;
   max-width: 100%;
   width: 100%;
   position: relative;
